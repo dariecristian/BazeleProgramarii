@@ -1,14 +1,21 @@
-﻿{Exercițiul 6}
+﻿{Exercitiul 5}
 var
-X, Z, Dif_V:integer;
-Med_V:real;
+x,y:integer;
 begin
-Writeln('Introdu varsta lui Nicolae:');
-Readln (X);
-Writeln('Introdu varsta lui Mihai:');
-Readln (Z);
-Med_V:=(X+Z)/2;
-Dif_V:=abs(X-Z);
-Writeln('Varsta medie a baietilor este: ', Med_V);
-Writeln('Diferenta de varsta a baietilor este: ', Dif_V);
+readln(x);
+readln(y);
+if (x=0) and (y=0) then
+  writeln('Origine')
+    else
+      if (x>0) and (y>0) then
+        writeln('Cadranul 1')
+          else 
+            if (x<0) and (y>0) then
+              writeln('Cadranul 2')
+                else 
+                  if (x<0) and (y<0) then
+                     writeln('Cadranul 3')
+                      else
+                        if (x>0) and (y<0) then 
+                          writeln('Cadranul 4'); 
 end.
